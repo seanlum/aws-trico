@@ -1,0 +1,25 @@
+{
+  "name": "aws-trico",
+  "version": "1.0.0",
+  "description": "An AWS Amplify React CMS",
+  "main": "App.js",
+  "scripts": {
+    "test": "npm Test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanlum/aws-trico.git"
+  },
+  "keywords": [
+    "AWS",
+    "Amplify",
+    "React",
+    "CMS"
+  ],
+  "author": "seanlum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanlum/aws-trico/issues"
+  },
+  "homepage": "https://github.com/seanlum/aws-trico#readme"
+}
