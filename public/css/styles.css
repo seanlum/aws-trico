@@ -1,0 +1,256 @@
+body, html {
+    background: #CCBEA1; /* color 5 */
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    margin: 0; padding: 0;
+    word-break: break-all;
+}
+
+#wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#wrapper::after {
+    clear: both !important;
+    content: '' !important;
+    display: block !important;
+    position: relative !important;
+    width: 100%;
+}
+
+header nav {
+    float: right;
+    padding-right: 0.5em;
+}
+header nav ul {
+    float: right;
+}
+
+header nav li {
+    list-style: none;
+    float: left;
+    padding: 0 0.3em;
+    color: #fff;
+}
+
+header nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 1em;
+    background: #404040;
+    border: #000 solid 1px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    background: #C5E8FE; /* color 1 */
+    color: #222;
+    margin: 0;
+    padding: 1em 2em 1em 0;
+    clear: both;
+    margin-bottom: 50px !important;
+}
+
+header::after {
+    content: '';
+    clear: both;
+    position: relative !important;
+}
+
+
+main {
+    clear: none;
+    float: left;
+    background: hsl(214, 6%, 22%); /* #7FD8FA color 2 */
+    color: #fff;
+    width: 94vw;
+    margin: 12vh 0 0 1.5vw;
+    padding-top: 0;
+    min-height: 88vh;
+    max-height: 88vh;
+    overflow-y: auto;
+}
+
+main h1 {
+    background: white;
+    color: black;
+    padding: 1vh 1vw;
+}
+
+.container .row {
+    border: 1px solid #ccc;
+}
+
+.container .row *[class^="col"] {
+    border: 1px solid #ccc;
+}
+
+.domain-details {
+    background: #fff;
+    color: #222;
+    margin-top: 2vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 0;
+    padding: 2vh 1vw;
+    font-size: 150%;
+}
+
+.secret-details {
+    background: #fff;
+    color: #222;
+    margin-top: 0;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    padding: 2vh 1vw 1vw 1vw;
+}
+
+.domain-details h2
+{
+    background: hsl(214, 6%, 22%);
+    border: 1px solid #222;
+    color: #fff;
+    padding: 1vh 1vw;
+    font-size: 220%;
+    margin-bottom: 3vh;
+}
+.domain-details h3 {
+    margin: 0 1.125vw;
+}
+
+.secret-details h2
+{
+    background: hsl(214deg 100% 31.47%);
+    border: 1px solid #222;
+    color: #fff;
+    padding: 1vh 1vw;
+}
+
+.password-area,
+.new-entity-form {
+    padding: 1vh 0.5vw;
+    height: 21.5vh;
+    background: hsl(214, 6%, 22%);
+}
+.password-area::after {
+    clear: both;
+    content: '';
+    position: relative;
+}
+.password-area button,
+.new-entity-form button {
+    font-size: 150%;
+    padding: 0.25vh 0.5vw;
+    margin: 0 0.25vw;
+    height: 6vh;
+    width: 5.6vw;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.password-area textarea,
+.new-entity-form textarea {
+    font-size: 150%;
+    display: block;
+    float: left;
+    width: 52.25vw;
+    margin-top: 0px;
+    margin-left: 0.3vw;
+    padding: 0vh 0.5vw;
+    height: 17.5vh;
+}
+
+.password-area input[type="text"],
+.new-entity-form input[type="text"] {
+    height: 3vh;
+    width: 52.65vw;
+    margin: 0.25vh 0.25vw;
+    padding: 0 0.25vw;
+    font-size: 150%;
+}
+
+.password-area .field-disabled {
+    background: #303030;
+    color: #a0a0a0;
+}
+
+.add-entity-button {
+    width: 100%;
+    height: 4vh;
+    background: green;
+    color: white;
+    font-size: 150%;
+    border: darkgreen 1px solid;
+    transition: background ease-in-out 0.5s,
+        border ease-in-out 0.5s,
+        color ease-in-out 0.5s;
+}
+
+.add-entity-button:hover {
+    background: forestgreen;
+    
+}
+
+.new-entity-form {
+    background: hsl(214, 6%, 22%);
+}
+
+aside {
+    position: absolute;
+    right: 0;
+    float: right;
+    background: hsl(214, 6%, 22%);  /* #69D7D8 color 3 */
+    color: #fff;
+    width: 586px;
+    margin: 0 0 0 0;
+    margin: 10vh 0 2vw;
+    min-height: 88vh;
+    max-height: 88vh;
+}
+
+.sidebar {
+    position: fixed;
+    transition: right 0.25s ease-in-out, left 0.25s ease-in-out;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    background: blue;
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px 0 0 8px;
+    left: -56px;
+    top: 20px;
+}
+.sidebar-show {
+    right: 0;
+}
+.sidebar-hide {
+    right: -586px;
+}
+
+footer {
+    background: #E5CEAE; /* color 4 */
+    color: #222;
+}
+
+.login-form {
+    display: block;
+    clear: both;
+    padding-top: 10vh;
+}
+
+.login-form input {
+    background: white;
+}
