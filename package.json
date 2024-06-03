@@ -2,9 +2,13 @@
   "name": "aws-trico",
   "version": "1.0.0",
   "description": "An AWS Amplify React CMS",
-  "main": "App.js",
+  "main": "index.js",
   "scripts": {
-    "test": "npm Test.js"
+    "test": "npm Test.js",
+    "start": "expo start",
+    "web": "expo start --web",
+    "build": "expo build:web",
+    "eject": "expo eject"
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,23 @@
   "bugs": {
     "url": "https://github.com/seanlum/aws-trico/issues"
   },
-  "homepage": "https://github.com/seanlum/aws-trico#readme"
+  "homepage": "https://github.com/seanlum/aws-trico#readme",
+  "dependencies": {
+    "@aws-amplify/ui-react": "^6.1.12",
+    "ampx": "^0.2.1",
+    "aws-amplify": "^6.3.4",
+    "expo": "^51.0.9",
+    "next": "^14.2.3",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.0.3",
+    "@aws-amplify/backend-cli": "^1.0.4",
+    "aws-cdk": "^2.144.0",
+    "aws-cdk-lib": "^2.144.0",
+    "constructs": "^10.3.0",
+    "esbuild": "^0.21.4",
+    "tsx": "^4.11.2",
+    "typescript": "^5.4.5"
+  }
 }
