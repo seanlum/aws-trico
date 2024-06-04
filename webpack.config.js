@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'index_bundle.js',
-    publicPath: 'https://visionlighter.dev:5000/'
+    publicPath: 'https://dev.visionlighter.com/'
   },
   target: 'web',
   devServer: {
@@ -25,21 +25,21 @@ module.exports = {
     hot: true,
     liveReload: true,
     allowedHosts: 'all',
-    server: {
-      type: 'http'
-    },
-    server: {
-      type: 'https',
-      options: {
-        minVersion: 'TLSv1.1',
-        key: fs.readFileSync('SSL/visionlighter.site.key'),
-        pfx: fs.readFileSync('SSL/visionlighter.site.pfx'),
-        cert: fs.readFileSync('SSL/visionlighter.site.crt'),
-        ca: fs.readFileSync('SSL/certs/visionlighter.pem'),
-        passphrase: '',
-        requestCert: true,  
-      }
-    },
+    // server: {
+    //   type: 'http'
+    // },
+    // server: {
+    //   type: 'https',
+      // options: {
+      //   minVersion: 'TLSv1.1',
+      //   key: fs.readFileSync('SSL/visionlighter.site.key'),
+      //   pfx: fs.readFileSync('SSL/visionlighter.site.pfx'),
+      //   cert: fs.readFileSync('SSL/visionlighter.site.crt'),
+      //   ca: fs.readFileSync('SSL/certs/visionlighter.pem'),
+      //   passphrase: '',
+      //   requestCert: true,  
+      // }
+    // },
     // proxy: [
     //   {
     //     context: ['/api'],
